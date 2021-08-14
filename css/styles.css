@@ -1,3 +1,57 @@
+body {
+    color: #757575;
+    background-color: #FFFFFF;
+}
+
+.list {
+    list-style: none;
+}
+
+/* nav styles */
+.nav-item {
+    color: #212121;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-item:hover, 
+.nav-item:focus {
+    color: #2196F3;
+}
+
+.line-list {
+    display: flex;
+}
+
+.e-mail {
+    color: #757575;
+}
+.e-mail:hover {
+    color: #2196F3;
+}
+
+.phone {
+    color: #757575;
+}
+.phone:hover {
+    color: #2196F3;
+}
+
+
+/* colors^
+212121
+FFFFFF
+rgba(255, 255, 255, 60%)
+757575
+EEEEEE
+2196F3
+F5F4FA
+000000
+2F303A
+ECECEC
+*/
+
+
 /* header section */
 
 
