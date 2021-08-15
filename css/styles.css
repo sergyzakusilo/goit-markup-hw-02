@@ -1,8 +1,43 @@
+:root {
+  --text-black: #000000;
+  --text-black-light: #212121;
+  --text-grey: #757575;           /* basic */
+  --text-white: #ffffff;
+  --text-white-alpha60: rgba(255, 255, 255, 60%);
+  --text-link-hover: #2196F3;
+  --fon-blue: #2196F3;
+  --fon-grey-dark: #2F303A;
+  --color-EEE: #EEEEEE;
+  --color-F5: #F5F4FA;
+  --color-EC: #ECECEC;
+  --buy-button-normal: #FFFFFF;
+  --buy-button-hover: #2196F3;
+  --hero-bgc: #2F303A;
+  --footer-bgc: #2F303A;
+
+
+/* colors^
+212121 -
+FFFFFF -
+rgba(255, 255, 255, 60%) -
+757575 -
+EEEEEE - w85
+2196F3 -
+F5F4FA - w90
+000000 -
+2F303A -
+ECECEC - w80
+*/
+
+
+}
+
 body {
-    color: #757575;
+    color: var(--text-grey);
     background-color: #FFFFFF;
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Roboto', sans-serif;  
+    width: 1600px;
 }
 
 a {
@@ -16,7 +51,7 @@ a {
     display: flex;
 }
 
-/* header section */
+/* header section ----------------------------------- */
 
 .logo-text-left {
     font-family: Raleway;
@@ -47,26 +82,26 @@ a {
     letter-spacing: 0.02em;
 }
 .nav-link {
-    color: #212121;
+    color: var(--text-black-light);
     margin-left: 10px;
     margin-right: 10px;
 }
 .nav-link-actual-page {
-    color: #2196F3;
+    color: var(--text-link-hover);
     margin-left: 10px;
     margin-right: 10px;
 }
 .nav-link:hover, 
 .nav-link:focus {
-    color: #2196F3;
+    color: var(--text-link-hover);
 }
 
-/* hero section styles */
+/* hero section styles ---------------------------------- */
 
 .hero-section {
     width: 700px;
     height: 600px;
-    background-color: #2F303A;
+    background-color: var(--hero-bgc);
     /* padding-top: 200px; */
      padding-left: 450px; 
      padding-right: 450px;
@@ -82,7 +117,7 @@ a {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--text-white);
     width: 700px;
 }
 
@@ -92,10 +127,15 @@ a {
     line-height: 30px;
     /* identical to box height, or 187% */
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(buy-button-normal);
     background-color: #2196F3;
 }
-
+.purchase-button:hover,
+.purchase-button:focus {
+    cursor: pointer;
+    color: var(--buy-button-hover);
+    background-color: tomato;
+}
 
 .header-e-mail {
     font-weight: 500;
@@ -103,11 +143,11 @@ a {
     line-height: 16px;
     letter-spacing: 0.02em;
     font-style: normal;
-    color: #757575;
+    color: var(--text-grey);
 }
 .header-e-mail:hover,
 .header-e-mail:focus {
-    color: #2196F3;
+    color: var(--text-link-hover);
 }
 
 .header-phone {
@@ -116,7 +156,7 @@ a {
     line-height: 16px;
     letter-spacing: 0.02em;
     font-style: normal;
-    color: #757575;
+    color: var(--text-grey);
 }
 .header-phone:hover,
 .header-phone:focus {
@@ -124,31 +164,67 @@ a {
 }
 
 
-/* colors^
-212121
-FFFFFF
-rgba(255, 255, 255, 60%)
-757575
-EEEEEE
-2196F3
-F5F4FA
-000000
-2F303A
-ECECEC
-*/
+/* main section ---------------------------------- */
+
+.features-section {
+    width: 1170px;
+}
+
+.features-section-h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-black-light); 
+}
+.features-section-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    /* color: #757575; */
+}
+
+.our-work-section-h2,
+.our-team-section-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-black-light);
+}
+
+.our-team-section-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-black-light);
+}
+.our-team-section-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+/* color: var(--text-grey); */
+}
 
 
-
-
-
-/* main section */
+/* -- portfolio page -------------------------- */
 .project-name-text {
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--text-black-light);
 }
 
 .project-type-text {
@@ -157,17 +233,17 @@ ECECEC
     line-height: 30px;
     /* identical to box height, or 187% */
     letter-spacing: 0.03em;
-    color: #757575;
+    /* color: #757575; */
 }
 
 .project-type-link {
-    color: #212121;
+    color: var(--text-black-light);
     margin-left: 5px;
     margin-right: 5px;
 }
 .project-type-link:hover,
 .project-type-link:focus {
-    color: #ffffff;
+    color: var(--text-white);
     background-color: #2196F3;
     margin-left: 5px;
     margin-right: 5px;
@@ -178,11 +254,11 @@ ECECEC
 .footer-section {
     width: 1600px;
     height: 252px;
-    background-color: #2F303A;
+    background-color: var(--footer-bgc);
 }
 
 .adress-section {
-    background-color: #2F303A;
+    background-color: var(--footer-bgc);
 }
 
 .footer-e-mail {
@@ -191,11 +267,11 @@ ECECEC
     line-height: 16px;
     letter-spacing: 0.02em;
     font-style: normal;
-    color: rgba(255,255,255, 60%);
+    color: var(--text-white-alpha60);
 }
 .footer-e-mail:hover,
 .footer-e-mail:focus {
-    color: #2196F3;
+    color: var(--text-link-hover);
 }
 
 .footer-phone {
@@ -204,11 +280,11 @@ ECECEC
     line-height: 16px;
     letter-spacing: 0.02em;
     font-style: normal;
-    color: rgba(255,255,255, 60%);
+    color:  var(--text-white-alpha60);
 }
 .footer-phone:hover,
 .footer-phone:focus {
-    color: #2196F3;
+    color: var(--text-link-hover);
 }
 
 .footer-adress-location {
@@ -218,9 +294,9 @@ ECECEC
     /* or 171% */
     letter-spacing: 0.03em;
     font-style: normal;
-    color: #FFFFFF;
+    color: var(--text-white);
 }
 .footer-adress-location:hover,
 .footer-adress-location:focus {
-    color: #2196F3;
+    color: var(--text-link-hover);
 }
