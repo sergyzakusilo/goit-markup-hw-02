@@ -11,7 +11,8 @@
   --color-F5: #F5F4FA;
   --color-EC: #ECECEC;
   --buy-button-normal: #FFFFFF;
-  --buy-button-hover: #2196F3;
+  --buy-button-hover: yellow;
+  --buy-button-fon: #2196F3;
   --hero-bgc: #2F303A;
   --footer-bgc: #2F303A;
 
@@ -63,7 +64,7 @@ a {
     letter-spacing: 0.03em;
     color: #2196F3;
 }
-.logo-text-right {
+.logo-text-right-top {
     font-family: Raleway;
     font-style: normal;
     font-weight: 700;
@@ -72,6 +73,16 @@ a {
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #000000;
+}
+.logo-text-right-bottom {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 /* nav styles */
@@ -127,14 +138,17 @@ a {
     line-height: 30px;
     /* identical to box height, or 187% */
     letter-spacing: 0.06em;
-    color: var(buy-button-normal);
-    background-color: #2196F3;
+    color: var(--buy-button-normal);
+    background-color: var(--buy-button-fon);
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .purchase-button:hover,
 .purchase-button:focus {
     cursor: pointer;
     color: var(--buy-button-hover);
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 .header-e-mail {
@@ -238,16 +252,18 @@ a {
 
 .project-type-link {
     color: var(--text-black-light);
+    background: var(--color-F5);
     margin-left: 5px;
     margin-right: 5px;
+    border-radius: 4px;
+    border-width: 0px;
 }
 .project-type-link:hover,
 .project-type-link:focus {
     color: var(--text-white);
-    background-color: #2196F3;
-    margin-left: 5px;
-    margin-right: 5px;
-    cursor: pointer;
+    background: #2196F3;
+    /* shadow-middle */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* footer section */
