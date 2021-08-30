@@ -38,7 +38,9 @@ body {
     background-color: #FFFFFF;
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Roboto', sans-serif;  
-    width: 1600px;
+    /* width: 1600px; */
+    letter-spacing: 0.03em;
+
 }
 
 a {
@@ -61,7 +63,6 @@ a {
     font-size: 26px;
     line-height: 31px;
     /* identical to box height */
-    letter-spacing: 0.03em;
     color: #2196F3;
 }
 .logo-text-right-top {
@@ -92,16 +93,13 @@ a {
     line-height: 16px;
     letter-spacing: 0.02em;
 }
+
 .nav-link {
     color: var(--text-black-light);
     margin-left: 10px;
     margin-right: 10px;
 }
-.nav-link-actual-page {
-    color: var(--text-link-hover);
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 .nav-link:hover, 
 .nav-link:focus {
     color: var(--text-link-hover);
@@ -120,16 +118,15 @@ a {
     /* padding: 450px, 450px, 200px, 280px; */
 }
 
-.hero-section-text {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     /* or 136% */
     text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--text-white);
-    width: 700px;
+    /* width: 700px; */
 }
 
 .purchase-button {
