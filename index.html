@@ -17,15 +17,15 @@
 <body>
     <!-- main page header   -->
     <!-- /* Верхняя линия */ -->
-    <header>
+    <header class="header">
         <!-- <img src="./images/logo-webstudio.png" alt="логотип WebStudio" width="145" height="20"> -->
-        <a href="./index.html" class="nav-link"><span class="logo-text-left" lang="en">Web</span><span
+        <a href="./index.html" class="logo-link"><span class="logo-text-left" lang="en">Web</span><span
                 class="logo-text-right-top" lang="en">Studio</span></a>
         <!-- nav bar -->
-        <nav>
-            <ul class="nav-link-list line-list list">
+        <nav class="nav">
+            <ul class="nav-link-list list">
                 <li>
-                    <a href="./index.html" class="nav-link-actual-page">Студия</a>
+                    <a href="./index.html" class="nav-link">Студия</a>
                 </li>
                 <li>
                     <a href="./portfolio.html" class="nav-link">Портфолио</a>
@@ -36,17 +36,17 @@
             </ul>
         </nav>
         <!-- e-mail -->
-        <div lang="en">
+        <div class="header-contacts" lang="en">
             <a href="mailto:info@devstudio.com" class="header-e-mail">info@devstudio.com</a>
             <!-- phone -->
             <a href="tel:+380961111111" class="header-phone">+38 096 111 11 11</a>
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <!-- main  page header image  -->
-        <section class="hero-section">
-            <h1 class="hero-section-text">Эффективные решения для вашего бизнеса</h1>
+        <section class="hero">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="purchase-button">Заказать услугу</button>
 
         </section>
@@ -54,35 +54,35 @@
         <!-- main  page content - section #1   -->
         <!-- features5 section -->
         <!-- 1600-1170 = 430 / 2 = 215-->
-        <section class="features-section">
+        <section class="features">
             <h2 hidden>Особенности</h2>
-            <ul class="line-list list">
+            <ul class="features-list line-list list">
                 <li>
-                    <h3 class="features-section-h3">Внимание к деталям </h3>
-                    <p class="features-section-text"> Идейные соображения, а также начало
+                    <h3 class="features-header">Внимание к деталям </h3>
+                    <p class="features-text"> Идейные соображения, а также начало
                         повседневной работы по формированию позиции.</p>
                 </li>
                 <li>
-                    <h3 class="features-section-h3">Пунктуальность </h3>
-                    <p class="features-section-text"> Задача организации, в особенности же рамки и место обучения кадров
+                    <h3 class="features-header">Пунктуальность </h3>
+                    <p class="features-text"> Задача организации, в особенности же рамки и место обучения кадров
                         влечет за собой.</p>
                 </li>
                 <li>
-                    <h3 class="features-section-h3">Планирование </h3>
-                    <p class="features-section-text"> Равным образом консультация с широким активом в значительной
+                    <h3 class="features-header">Планирование </h3>
+                    <p class="features-text"> Равным образом консультация с широким активом в значительной
                         степени обуславливает.</p>
                 </li>
                 <li>
-                    <h3 class="features-section-h3">Современные технологии </h3>
-                    <p class="features-section-text"> Значимость этих проблем настолько очевидна, что реализация
+                    <h3 class="features-header">Современные технологии </h3>
+                    <p class="features-text"> Значимость этих проблем настолько очевидна, что реализация
                         плановых заданий.</p>
                 </li>
             </ul>
         </section>
         <!-- our work section -->
-        <section>
-            <h2 class="our-work-section-h2">Чем мы занимаемся</h2>
-            <ul class="line-list list">
+        <section class="works">
+            <h2 class="works-header">Чем мы занимаемся</h2>
+            <ul class="works-list line-list list">
                 <li>
                     <img src="images/work-photo/work-1.jpg" alt="работа-1" width="370" height="294">
                 </li>
@@ -97,50 +97,50 @@
 
         <!-- main  page content - section #2  -->
         <!-- our team section -->
-        <section>
-            <h2 class="our-team-section-h2">Наша команда</h2>
+        <section class="our-team-section-h3">
+            <h2 class="team-header">Наша команда</h2>
             <!-- photos gallery -->
-            <ul class="line-list list">
+            <ul class="team-list line-list list">
                 <!-- photo #1 -->
                 <li>
                     <img src="images/team-photo/team-0.jpg" alt="фото 0" width="270" height="260">
-                    <h3 class="our-team-section-h3">
+                    <h3 class="team-card-header">
                         Игорь Демьяненко
                     </h3>
-                    <p class="our-team-section-text" lang="en">Product Designer</p>
+                    <p class="team-card-text" lang="en">Product Designer</p>
                 </li>
                 <!-- photo #2 -->
                 <li>
                     <img src="images/team-photo/team-1.jpg" alt="фото 1" width="270" height="260">
-                    <h3 class="our-team-section-h3">
+                    <h3 class="team-card-header">
                         Ольга Репина
                     </h3>
-                    <p class="our-team-section-text" lang="en">Frontend Developer</p>
+                    <p class="team-card-text" lang="en">Frontend Developer</p>
                 </li>
                 <!-- photo #3 -->
                 <li>
                     <img src="images/team-photo/team-2.jpg" alt="фото 2" width="270" height="260">
-                    <h3 class="our-team-section-h3">
+                    <h3 class="team-card-header">
                         Николай Тарасов
                     </h3>
-                    <p class="our-team-section-text" lang="en">Marketing</p>
+                    <p class="team-card-text" lang="en">Marketing</p>
                 </li>
                 <!-- photo #4 -->
                 <li>
                     <img src="images/team-photo/team-3.jpg" alt="фото 3" width="270" height="260">
-                    <h3 class="our-team-section-h3">
+                    <h3 class="team-card-header">
                         Михаил Ермаков
                     </h3>
-                    <p class="our-team-section-text" lang="en">UI Designer</p>
+                    <p class="team-card-text" lang="en">UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
 
     <!-- main page footer-->
-    <footer class="footer-section">
+    <footer class="footer">
         <!-- <img src="./images/logo-webstudio.png" alt="логотип WebStudio" width="145" height="20"> -->
-        <a href="./index.html" class="nav-link"><span class="logo-text-left" lang="en">Web</span><span
+        <a href="./index.html" class="logo-link"><span class="logo-text-left" lang="en">Web</span><span
                 class="logo-text-right-bottom" lang="en">Studio</span></a>
         <address class="adress-section">
             <!-- map mark -->
