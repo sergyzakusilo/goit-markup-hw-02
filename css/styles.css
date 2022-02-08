@@ -1,3 +1,70 @@
 body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #212121;
   background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* sections -------------------------*/
+
+/* <!-- TODO experiment -->  */
+/* .topline,
+.topline ul {
+  display: flex;
+} */
+
+.content {
+  color=red; /**/
+}
+
+.hero {
+  background-color: #2F303A;;
+}
+
+.features {
+  color=red; /**/
+}
+
+.ourworks {
+  color=red; /**/
+}
+
+.ourteam {
+  background-color: #F5F4FA;
+}
+
+.footer {
+  background-color: #2F303A;
+}
+
+/* logo ----------------------------- */
+.header-logo,
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26pt;
+}
+.header-logo-left {
+  color: #2196f3;
+}
+.header-logo-rigth {
+  color: #000000;
+}
+.footer-logo-left {
+  color: #2196f3;
+}
+.footer-logo-rigth {
+  color: #ffffff;
+  background-color: #2f303a; /* !! */
 }
