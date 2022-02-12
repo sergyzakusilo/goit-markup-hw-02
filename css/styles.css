@@ -1,6 +1,8 @@
-root: {
-  --main-text-color: #757575;
+:root {
+  --main-text-color: #75ff75;
   --akcent-color: #2196f3;
+  --text-dark-grey: #212121;
+  --text-white: #FFFFFF;
 }
 
 body {
@@ -10,7 +12,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--main-text-color);
   background-color: #ffffff;
 }
 
@@ -22,34 +24,46 @@ address {
   font-style: normal;
 }
 
-/* sections -------------------------*/
-
-/* <!-- TODO experiment -->  */
-/* .topline,
-.topline ul {
-  display: flex;
-} */
-.topline {
-  color=red; /**/
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6 {
+  color: var(--text-dark-grey);
 }
 
-.nav-link {
+/* header styles ------------------------------- */
+.header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
 
+.nav-link {
   color: #212121;
 }
 
+.header-email,
+.header-phone {
+  color: #757575;
+}
+
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.header-email:hover,
+.header-email:focus,
+.header-phone:hover,
+.header-phone:focus {
   color: #2196f3;
 }
+
 
 .content {
   color=red; /**/
 }
 
+/* hero styles --------------------------------- */
 .hero {
   background-color: #2F303A;;
 }
@@ -59,26 +73,78 @@ address {
   font-size: 44px;
   line-height: 1.36;
 /* or 136% */
+  letter-spacing: 0.06em;
 
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #FFFFFF;  
+  color: var(--text-white);  
 }
 
+.hero-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+/* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+
+  text-align: center;
+
+  color: var(--text-white);
+  background-color: #2196F3;
+}
+
+.hero-button:hover {
+  background-color: #188CE8;
+}
+
+/* features style ------------------------------- */
 .features {
   color=red; /**/
 }
 
+.features-title {
+  line-height: calc(16/14);
+}
+
+.features-text {
+  line-height: calc(24/14);
+}
+
+/* ourwork ------------------------------------- */
 .ourworks {
   color=red; /**/
 }
 
+.ourwork-title,
+.ourteam-title {
+  font-size: 36px;
+  line-height: calc(42/36);
+  text-align: center;
+}
+
+/* ourteam -------------------------------------- */
 .ourteam {
   background-color: #F5F4FA;
 }
 
+.ourteam-card-title,
+.ourteam-card-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19/16);
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.ourteam-card-text {
+  font-weight: 400;
+}
+
+/* footer --------------------------------------- */
 .footer {
   background-color: #2F303A;
 }
