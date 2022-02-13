@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: "Roboto", "Raleway","sans serif";
+  font-family: "Roboto", "sans serif";
   font-style: normal;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.2;             /**/
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
@@ -94,11 +94,15 @@ h6 {
 
   color: var(--text-white);
   background-color: #2196F3;
+
+  cursor: pointer;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #188CE8;
 }
+
 
 /* features style ------------------------------- */
 .features {
@@ -149,6 +153,21 @@ h6 {
   background-color: #2F303A;
 }
 
+.footer-link,
+.footer-link-street {
+  line-height: calc(16/14);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-street {
+  color: var(--text-white);
+}
+
+.footer-link:hover,
+.footer-link-street:hover {
+  color: var(--akcent-color);  
+}
+
 /* logo ----------------------------- */
 .header-logo,
 .footer-logo {
@@ -166,4 +185,46 @@ h6 {
 .footer-logo-rigth {
   color: #ffffff;
   /* background-color: #2f303a; !! */
+}
+
+/* portfolio page ------------------------- */
+/* ---------------------------------------- */
+.project-card-link {
+  color: var(--main-text-color);
+}
+.project-card-link:hover {
+  color: var(--akcent-color);
+}
+
+.project-card-title {
+  font-size: 18px;
+  line-height: calc(36/18);
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+
+.project-card-text {
+  font-size: 16px;
+  line-height: calc(30/16);
+}
+
+.filter-button {
+  font-family: "Roboto", "sans serif";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26/16);
+  /* identical to box height, or 162% */
+  /*  */
+  text-align: center;
+  /*  */
+  color: var(--text-dark-grey);
+  background-color: #F5F4FA;
+  /**/
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--text-white);
+  background-color: var(--akcent-color);
 }
